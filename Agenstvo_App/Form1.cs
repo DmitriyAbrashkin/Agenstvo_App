@@ -21,9 +21,16 @@ namespace Agenstvo_App
         public Form1()
         {
             InitializeComponent();
+            Update();
+            Update2();
+            Update3();
+            Update4();
         }
 
         #region Работники
+       /// <summary>
+       /// Обновить вкладку "Работники"
+       /// </summary>
         public new void Update()
         {
             myConnection.Open();
@@ -44,8 +51,6 @@ namespace Agenstvo_App
             dataGridView1.Columns["ID"].Visible = false;
             myConnection.Close();
         }
-
-
 
         private void button13_Click(object sender, EventArgs e)
         {

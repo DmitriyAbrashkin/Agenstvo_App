@@ -13,7 +13,7 @@ namespace Agenstvo_App
 {
     public partial class Form1 : Form
     {
-        #region Строка подключения
+        #region Строка Подключения
         public static string connectString = "Server=DESKTOP-FE1KLBU;Database=BAZA;Integrated Security=true";
         SqlConnection myConnection = new SqlConnection(connectString);
         #endregion
